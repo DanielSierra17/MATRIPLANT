@@ -1,0 +1,42 @@
+<html>
+<head>
+        <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalabe=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="../Vista/Comando.css">
+        <link rel="shortcut icon" href="https://celestinfreinet.edu.co/wp-content/uploads/2020/10/Icono.png">
+
+    </head>
+    <body>
+
+            <form action="../Controlador/Cursito.php" method="POST">
+  <div class="container-add">
+
+<h2 class="container__title">REGISTRO CURSOS</h2>
+
+<div class="container__form">
+
+  <label for="" class="container__label">CURSO</label>
+<input type="number" class="container__input" name="txt1" id="I1" required autofocus>
+<label for="" class="container__label">CANTIDAD ESTUDIANTES</label>
+<input type="number" class="container__input" name="txt2" id="I2" required>
+
+              <label for="" class="container__label">UBICACION</label>
+<select class="container__inputs" name="txt3" required id="I3">
+                  <option>Sede Administrativa</option>
+                  <option>Sede Bachillerato</option>
+                  <option>Sede Preescolar</option>
+                  <option>Sede Bilingüe</option>
+                  <option>Sede Soacha</option>
+                  <option>Sede Norte</option>
+                  <option>Sede Chia</option>
+              </select>
+
+<input type="submit" value="REGISTRAR" class="container__submit">
+<input type="reset" value="BORRAR" class="container__reset">
+
+</div>
+</div>
+
+</form>
+    </body>
+    </html>

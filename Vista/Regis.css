@@ -1,0 +1,75 @@
+body{
+    font-family: 'Source Sans Pro', sans-serif;
+    margin: 0;
+    background-image: url(https://www.ecestaticos.com/imagestatic/clipping/cbf/136/cbf1369efbdb8b25f12a0d685d12a2e6/que-factores-determinan-la-excelencia-de-un-colegio-hablan-los-expertos.jpg?mtime=1615374650);
+  
+
+}
+*{
+    box-sizing: border-box;
+}
+.contenedor{
+    width: 100%;
+    padding: 15px;
+}
+.formulario{
+    background: #fff;
+    margin-top: 150px;
+    padding: 0px;
+}
+.container__title{
+    margin: 0;
+    padding: 10px;
+    background-color: #C8001E;
+color: white;
+font-size: 1.9em;
+text-align: center;
+font-family: 'Source Sans Pro', sans-serif;
+}
+input[type="text"],
+input[type="password"]{
+    font-size: 20px;
+    width: 82%;
+    padding: 10px;
+    border: none;
+}
+.input-contenedor{
+    margin-bottom: 15px;
+    border: 1px solid #727272;
+}
+.icon{
+    min-width: 50px;
+    text-align: center;
+    color: rgba(2, 12, 69, 0.95);
+}
+.button{
+    border: none;
+    width: 100%;
+    color: white;
+    font-size: 20px;
+    background: #06366c;
+    padding: 15px 20px;
+    border-radius: 0px;
+    cursor: pointer;
+}
+.button:hover{
+    background: #C8001E;
+    text-align: center;
+}
+.link{
+    text-decoration: none;
+    color: #06366c;
+    font-weight: 600;
+}
+.link:hover{
+    color: #C8001E;
+}
+@media(min-width:750px)
+{
+    .formulario{
+        margin: auto;
+        width: 500px;
+        margin-top: 70px;
+        border-radius: 0%;
+    }
+}

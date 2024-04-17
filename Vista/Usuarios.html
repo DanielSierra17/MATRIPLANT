@@ -1,0 +1,108 @@
+<html>
+<head>
+        <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalabe=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="../Vista/Registros.css">
+        <link rel="shortcut icon" href="https://celestinfreinet.edu.co/wp-content/uploads/2020/10/Icono.png">
+
+        <script>
+            function seleccionar()
+            {
+              if(document.getElementById('I9').value == "Administrador")
+              {
+                document.getElementById('I11').disabled = false;
+                document.getElementById('I16').disabled = false;
+              }
+              if(document.getElementById('I9').value == "Personal Gestion Matricula")
+              {
+                document.getElementById('I11').disabled = false;
+                document.getElementById('I16').disabled = false;
+              }
+              if(document.getElementById('I9').value == "Estudiante")
+              {
+                document.getElementById('I11').disabled = false;
+                document.getElementById('I16').disabled = true;
+              }
+            }
+        </script>
+
+    </head>
+    <body>
+
+            <form action="../Controlador/Controller.php" method="POST">
+  <div class="container-add">
+
+<h2 class="container__title">REGISTRO USUARIOS</h2>
+
+<div class="container__form">
+
+  <label for="" class="container__label">NUMERO DOCUMENTO</label>
+<input type="number" class="container__input" name="txt1" id="I1" required autofocus>
+<label for="" class="container__label">CONTRASEÑA</label>
+<input type="password" class="container__input" name="txt2" id="I2" required>
+<label for="" class="container__label">NOMBRE USUARIO</label>
+<input type="text" class="container__input" name="txt3" id="I3" required>
+<label for="" class="container__label">NOMBRES</label>
+<input type="text" class="container__input" name="txt4" id="I4" required>
+<label for="" class="container__label">PRIMER APELLIDO</label>
+<input type="text" class="container__input" name="txt5" id="I5" required>
+<label for="" class="container__label">SEGUNDO APELLIDO</label>
+<input type="text" class="container__input" name="txt6" id="I6" required>
+<label for="" class="container__label">TELEFONO</label>
+<input type="tel" class="container__input" name="txt7" id="I7" required>
+<label for="" class="container__label">CORREO</label>
+<input type="email" class="container__input" name="txt8" id="I8" required>
+
+<label for="" class="container__label">CARGO</label>
+<select class="container__input" name="txt9" required id="I9" onchange="seleccionar()">
+                  <option>Personal Gestion Matricula</option>
+                  <option>Estudiante</option>
+                  <option>Administrador</option>
+              </select>
+
+              <label for="" class="container__label">FECHA NACIMIENTO</label>
+<input type="date" class="container__input" name="txt10" id="I10" required>
+<label for="" class="container__label">COLEGIO ANTIGUO</label>
+<input type="text" class="container__input" name="txt11" id="I11" disabled placeholder="No Obligatorio">
+<label for="" class="container__label">CIUDAD</label>
+<input type="text" class="container__input" name="txt12" id="I12">
+<label for="" class="container__label">DIRECCION</label>
+<input type="text" class="container__input" name="txt13" id="I13">
+<label for="" class="container__label">BARRIO</label>
+<input type="text" class="container__input" name="txt14" id="I14">
+<label for="" class="container__label">ESTRATO</label>
+<input type="number" class="container__input" name="txt15" id="I15" min="1" max="6">
+
+              <label for="" class="container__label">AÑOS EXPERIENCIA</label>
+<input type="number" class="container__input" name="txt16" id="I16" disabled placeholder="No Obligatorio" min="0" max="40">
+
+<label for="" class="container__label">GENERO</label>
+<select class="container__input" name="txt17" required id="I17">
+                  <option>Masculino</option>
+                  <option>Femenino</option>
+              </select>
+
+              <label for="" class="container__label">EPS</label>
+<input type="text" class="container__input" name="txt18" id="I18" required>
+<label for="" class="container__label">RH</label>
+<select class="container__input" name="txt19" required id="I19">
+                  <option>+</option>
+                  <option>-</option>
+              </select>
+              <label for="" class="container__label">TIPO DE SANGRE</label>
+<select class="container__input" name="txt20" required id="I20">
+                  <option>A</option>
+                  <option>B</option>
+                  <option>AB</option>
+                  <option>O</option>
+              </select>
+
+<input type="submit" value="REGISTRAR" class="container__submit">
+<input type="reset" value="BORRAR" class="container__reset">
+
+</div>
+</div>
+
+</form>
+    </body>
+    </html>

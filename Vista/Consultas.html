@@ -1,0 +1,38 @@
+<html>
+<head>
+        <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalabe=yes, initial-scale=1.0, maximum-scale=3.0, minimum-scale=1.0">
+        <link rel="stylesheet" href="../Vista/Consult.css">
+        <link rel="shortcut icon" href="https://celestinfreinet.edu.co/wp-content/uploads/2020/10/Icono.png">
+    </head>
+    <body>
+
+            <form action="../Controlador/Consultar.php" method="POST">
+  <div class="container-add">
+
+<h2 class="container__title">CONSULTA DE DATOS</h2>
+
+<div class="container__form">
+
+  <label for="" class="container__label">DATO A CONSULTAR</label>
+<input type="text" class="container__input" name="txt1" id="I1" autofocus>
+<label for="" class="container__label">TIPO DE CONSULTA</label>
+<select class="container__input" name="tipoconsulta" id="I2">
+                  <option>PERFIL</option>
+                  <option>NUMERO DE DOCUMENTO</option>
+                  <option>NUMERO DE CEDULA</option>
+                  <option>ALERGIAS</option>
+                  <option>MATRICULA</option>
+                  <option>ASIGNACIONES</option>
+                  <option>CURSOS</option>
+              </select>
+
+
+<input type="submit" value="CONSULTAR" class="container__submit">
+
+</div>
+</div>
+
+</form>
+    </body>
+    </html>
